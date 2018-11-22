@@ -1,0 +1,40 @@
+.komola{
+    background-image: url('image/Captureq.PNG');
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    /* background-size: cover;
+    background-position: center center; */
+    position: relative;
+    /* transition: 20s; */
+}
+.komola:before{
+    background-color: green;
+   width: 250px;
+    height: 500px;
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 2s;
+}
+.komola:after{
+    background-color: rgb(138, 189, 189);
+    width:  250px;
+    height: 500px;
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 2s;
+}
+.komola:hover:before{
+    left: -250px;
+}
+.komola:hover:after{
+    right:  -250px;
+}
